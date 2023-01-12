@@ -1,0 +1,65 @@
+server:
+  port: # 环境配置中设置
+spring:
+  application:
+    name: oauth-template
+  jackson:
+    default-property-inclusion: non_null
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+  datasource:
+    name: oauth-template-datasource
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: # 环境配置中设置
+    username: # 环境配置中设置
+    password: # 环境配置中设置
+    druid:
+      initialSize: 1
+      minIdle: 1
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+  redis:
+    host: # 环境配置中设置
+    port: # 环境配置中设置
+    password: # 环境配置中设置
+    database: # 环境配置中设置
+    # lettuce客户端连接池配置
+    lettuce:
+      pool:
+        max-idle: 16
+        max-active: 32
+        min-idle: 8
+mybatis-plus:
+  configuration:
+    # sql 日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+# 应用配置
+app:
+  name: 认证模板
+  code: oauth-template
+  version: 1.0-SNAPSHOT
+
+# 单点登录配置
+sso:
+  # 是否开启
+  active: # 环境配置中设置
+  #登录页面地址
+  server: # 环境配置中设置
+  #登录服务地址
+  api: # 环境配置中设置
+  token:
+    # Token生成模式 1 - UUID 2 - JWT
+    model: # 环境配置中设置
+
+# jwt配置
+jwt:
+  # 密钥
+  secret: # 环境配置中设置
+  # 过期时间 单位: 秒
+  expire: # 环境配置中设置
+
