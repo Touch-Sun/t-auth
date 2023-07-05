@@ -1,6 +1,6 @@
-# OAuthTemplate(🍋REST服务开发脚手架)
+# T - AUTH🍋一款开箱即用、学习简单、轻量级、权限认证框架
 
-✨ OAuthTemplate(🍋REST服务开发脚手架) - 是一款基于SpringBootV2.6.7的快速开发脚手架
+✨ T - AUTH🍋一款开箱即用、学习简单、轻量级、权限认证框架 - 是一款基于SpringBootV2.6.7的快速开发脚手架
 
 <!-- PROJECT SHIELDS -->
 
